@@ -1,4 +1,4 @@
-var path = require('path')
+var path#= require('path')
 
 var serialize = function(input) {
   if (typeof input !== 'function') return JSON.stringify(input)
@@ -40,3 +40,4 @@ module.exports.init = function() {
   var wrap = args.pop()
   wrap(args, mod)
 }
+ 
